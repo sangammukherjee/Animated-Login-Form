@@ -76,7 +76,8 @@ form .control-wrapper {
 .control .input:focus {
   outline: none;
 }
-.input:focus + .label {
+.control .input:focus ~ .label,
+.control .input:valid ~ .label {
   font-size: 18px;
   top: -25px;
   left: 0;
