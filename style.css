@@ -1,0 +1,273 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background: url(images/bg-image4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background: rgb(29,29,29);
+  background: linear-gradient(90deg, rgba(29,29,29,1) 0%, rgba(6,3,2,0.6337885495995272) 17%, rgba(29,29,29,1) 100%);
+}
+
+.login-content h2 {
+  color: #ffdd40;
+  text-transform: uppercase;
+  font-size: 2.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s steps(10, end), blink-caret 0.5s step-end infinite;
+}
+
+.login-content-form {
+  width: 100%;
+}
+
+.login-content-form .form-controls-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+  margin: 30px 0px;
+}
+
+.form-controls-wrapper div {
+  position: relative;
+}
+
+.inputUserName,
+.inputPassword {
+  width: 100%;
+  border: 2px solid #ffdd40;
+  padding: 25px 10px;
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  color: #ffdd40;
+  border-radius: 8px;
+}
+
+.userNameLabel,
+.passwordLabel,
+.descriptionLabel {
+  font-weight: 500;
+  position: absolute;
+  top: 22px;
+  left: 12px;
+  transition: all 0.2s ease;
+  z-index: 0;
+  color: #ffdd40;
+  font-size: 16px;
+}
+
+.inputUserName:focus,
+.inputPassword:focus {
+  outline: none;
+}
+.inputUserName:focus + .userNameLabel,
+.inputPassword:focus + .passwordLabel {
+  font-size: 18px;
+  top: -25px;
+  left: 0;
+}
+
+a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.login-content-form button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: 1.5px solid #ffdd40;
+  background: transparent;
+  font-size: 1.2rem;
+  color: #ffdd40;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+  animation: typing 2.5s , blink-caret 0.5s step-end;
+}
+.login-content-form button:hover {
+  background-position: right;
+  background-image: linear-gradient(to right, #ffdd40, #ffdd40, #ffdd40);
+  color: #000;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url(images/bg-image4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  padding: 40px 10px;
+  background: linear-gradient(90deg, rgba(29,29,29,1) 0%, rgba(6,3,2,0.6337885495995272) 17%, rgba(29,29,29,1) 100%);
+}
+.container h1 {
+  color: #ffdd40;
+  text-transform: uppercase;
+  font-size: 2rem;
+  white-space: nowrap;
+  padding: 0 40px;
+  overflow: hidden;
+  text-align: center;
+  animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+.container form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .control-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 35px;
+  margin: 30px 0px;
+}
+.control-wrapper .control {
+  position: relative;
+}
+.control .input {
+  width: 100%;
+  border: 2px solid #ffdd40;
+  padding: 15px 10px;
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  color: #ffdd40;
+  border-radius: 8px;
+}
+.control .label {
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  transition: all 0.2s ease;
+  z-index: 0;
+  color: #ffdd40;
+  font-size: 16px;
+}
+
+.control .input:focus {
+  outline: none;
+}
+.input:focus + .label {
+  font-size: 18px;
+  top: -25px;
+  left: 0;
+}
+
+.pass {
+  color: #ffdd40;
+  cursor: pointer;
+}
+.pass:hover {
+  text-decoration: underline;
+}
+form button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: 1.5px solid #ffdd40;
+    background: transparent;
+    font-size: 1.2rem;
+    color: #ffdd40;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+    animation: typing 2.5s , blink-caret 0.5s step-end;
+}
+form button:hover {
+  transition: 0.5s;
+  background: #ffdd40;
+  color: #000;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
